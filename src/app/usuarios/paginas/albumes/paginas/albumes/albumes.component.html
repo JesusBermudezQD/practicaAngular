@@ -1,0 +1,10 @@
+<h3 class="mt-4">Albumes</h3>
+<hr />
+
+<div class="card-group">
+  <app-card-simple
+    [data]="album"
+    url="/albumes/album"
+    *ngFor="let album of albumes"
+  ></app-card-simple>
+</div>

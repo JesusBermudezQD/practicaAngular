@@ -1,0 +1,85 @@
+<img src="../../../../assets/sin-foto.png" class="img-thumbnail" />
+      <h4>{{ usuario.name }}</h4>
+      <pre class="mb-4">{{ usuario.username }}</pre>
+      <h6>Contacto</h6>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Personal
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <p><b>Tel:</b> {{ usuario.phone }}</p>
+
+              <p><b>Email:</b> {{ usuario.email }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              Residencia
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <p><b>Ciudad:</b> {{ usuario.address.city }}</p>
+              <p><b>Calle:</b> {{ usuario.address.street }}</p>
+              <p><b>Suite:</b> {{ usuario.address.suite }}</p>
+              <p><b>Codigo Postal:</b> {{ usuario.address.zipcode }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              Compañia
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <p><b>Nombre:</b> {{ usuario.company.name }}</p>
+              <p><b>Eslogan:</b> {{ usuario.company.catchPhrase }}</p>
+              <p><b>WebSite:</b> {{ usuario.website }}</p>
+            </div>
+          </div>
+        </div>
+      </div>

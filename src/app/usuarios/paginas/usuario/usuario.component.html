@@ -1,0 +1,28 @@
+<div class="row mt-4 mb-4">
+  <div class="col-4 border text-center">
+    <div *ngIf="usuario">
+      <app-accordion [usuario]="usuario"></app-accordion>
+    </div>
+  </div>
+  <div class="col">
+    <h3>Albumes</h3>
+    <hr />
+    <div class="card-group">
+      <app-card-simple
+        [data]="album"
+        url="/albumes/album"
+        *ngFor="let album of albumes"
+      ></app-card-simple>
+    </div>
+
+    <h3 class="mt-4">Posts</h3>
+    <hr />
+    <div class="card-group">
+      <app-card-simple
+        [data]="post"
+        url="/posts/post"
+        *ngFor="let post of posts"
+      ></app-card-simple>
+    </div>
+  </div>
+</div>

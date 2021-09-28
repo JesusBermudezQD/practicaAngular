@@ -1,0 +1,13 @@
+<h3 class="mt-4">Photos</h3>
+<hr>
+<div class="row row-cols-2 row-cols-md-4 g-4">
+    
+  <div class="col" *ngFor="let photo of photos">
+    <div class="card">
+      <img [src]="photo.url" class="card-img-top" alt="..."  />
+      <div class="card-body">
+        <h5 class="card-title">{{photo.title}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
